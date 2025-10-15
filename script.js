@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const chatArea = document.querySelector(".chat-container");
 
     // 🔗 Teu Webhook no n8n (modo "Respond to Webhook")
-    const N8N_WEBHOOK_URL = "https://kauafelixxz.app.n8n.cloud/webhook-test/01639ea2-a7dc-4a17-926d-c0941eeaf064";
+    const N8N_WEBHOOK_URL = "https://kauafelixxz.app.n8n.cloud/webhook/01639ea2-a7dc-4a17-926d-c0941eeaf064";
 
     // Função para adicionar mensagens no chat
     function addMessage(text, sender = "user") {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Mostra a mensagem de "digitando..."
         const loadingMessage = document.createElement("div");
         loadingMessage.classList.add("message", "ai-message");
-        loadingMessage.textContent = "Servo de Maria está refletindo...";
+        loadingMessage.textContent = "...";
         chatArea.appendChild(loadingMessage);
         chatArea.scrollTop = chatArea.scrollHeight;
 
